@@ -148,12 +148,12 @@ a {
 /*CSS reset 結束*/
 
 body {
-    width: 1024px;
+    width: 100%;
     background: #FFF;
 }
 
 .container {
-    width: 940px;
+    max-width: 80%;
     margin-right: auto;
     margin-left: auto;
     background: #FFF;
@@ -163,6 +163,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -172,16 +173,24 @@ body {
 }
 
 .list {
-    width: 300px;
+    width: 30%;
+}
+
+.list ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.list li {
+.list ul li {
     font: normal normal 600 16px PingFang TC;
     letter-spacing: 0px;
     color: #3F5D45;
+}
+
+.banner img {
+    width: 100%;
+
 }
 
 .banner {
@@ -191,10 +200,11 @@ body {
 .main {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .menu {
-    width: 300px;
+    width: 20%;
     margin-right: 20px;
     font-size: 24px;
     line-height: 40px;
@@ -225,15 +235,17 @@ body {
 }
 
 .shop {
-    width: 620px;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .sweet {
-    width: 300px;
+    width: 32%;
     background: #FFF;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
 }
 
@@ -348,4 +360,50 @@ body {
 .shop a:hover {
     background: #3F5D45;
     color: #EAF0ED;
+}
+
+.sweetPic {
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .sweet {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .sweet {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    .list {
+        width: 100%;
+        margin: auto;
+    }
+    .menu {
+        width: 100%;
+        margin-right: 20px;
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .shop {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .sweet {
+        width: 100%;
+    }
 }
