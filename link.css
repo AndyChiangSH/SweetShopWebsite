@@ -292,8 +292,8 @@ body {
 }
 
 .num {
-    font-size: 20px;
-    border: 1px solid #EAF0ED font: normal normal 600 20px/20px PingFang TC;
+    border: 1px solid #EAF0ED;
+    font: normal normal 600 20px/20px PingFang TC;
     letter-spacing: 0px;
     padding: 21px 26px;
     text-align: center;
